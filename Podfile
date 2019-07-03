@@ -8,6 +8,7 @@ target 'Avatar' do
   # Pods for Avatar
   pod 'RxSwift', :path => '../siuying/RxSwift', :inhibit_warnings => true
   pod 'RxCocoa', :path => '../siuying/RxSwift', :inhibit_warnings => true
+  pod 'PromiseKit', :path => '../siuying/PromiseKit', :inhibit_warnings => true
 
   target 'AvatarTests' do
     inherit! :search_paths
@@ -19,4 +20,14 @@ target 'Avatar' do
     # Pods for testing
   end
 
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    if ['PromiseKit'].include? target.name
+      target.build_configurations.each do |config|
+        config.build_settings['SWIFT_VERSION'] = '4.2'
+      end
+    end
+  end
 end
