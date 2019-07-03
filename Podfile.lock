@@ -1,0 +1,22 @@
+PODS:
+  - RxCocoa (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxSwift (4.5.0)
+
+DEPENDENCIES:
+  - RxCocoa (from `../siuying/RxSwift`)
+  - RxSwift (from `../siuying/RxSwift`)
+
+EXTERNAL SOURCES:
+  RxCocoa:
+    :path: "../siuying/RxSwift"
+  RxSwift:
+    :path: "../siuying/RxSwift"
+
+SPEC CHECKSUMS:
+  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+
+PODFILE CHECKSUM: 7f08a52593717999b1604739d30ebf4758f2e7de
+
+COCOAPODS: 1.7.1
