@@ -6,8 +6,8 @@ target 'Avatar' do
   use_frameworks!
 
   # Pods for Avatar
-  pod 'RxSwift', :path => '../siuying/RxSwift', :inhibit_warnings => true
-  pod 'RxCocoa', :path => '../siuying/RxSwift', :inhibit_warnings => true
+  pod 'RxSwift', '4.5.0.uikitformac', :source => 'git@github.com:GoodNotes/Specs.git', :inhibit_warnings => true
+  pod 'RxCocoa', '4.5.0.uikitformac', :source => 'git@github.com:GoodNotes/Specs.git', :inhibit_warnings => true
   pod 'PromiseKit', :path => '../siuying/PromiseKit', :inhibit_warnings => true
 
   target 'AvatarTests' do
